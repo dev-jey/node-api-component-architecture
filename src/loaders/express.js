@@ -66,7 +66,7 @@ export default async ({ app }) => {
   });
 
   // Server listen
-  app.listen(server.port || 3000, err => {
+  app.listen(server.port || 3000, (err) => {
     // If any error before the server loader will show the message
     if (err) {
       Logger.error(err);
@@ -79,4 +79,4 @@ export default async ({ app }) => {
       ################################################
     `);
   });
-}
+};

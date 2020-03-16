@@ -8,7 +8,7 @@ const TestController = {
       // console.log(params);
       return await res.status(200).json({ msg: 'Hello', params });
     } catch (err) {
-      Logger.error('🔥 Error: %o', err);
+      Logger.error('Error: %o', err);
       return next(err);
     }
   },
